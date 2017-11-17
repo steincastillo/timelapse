@@ -1,0 +1,10 @@
+{
+    "camera_rotation": 0,
+    "camera_resolution": [1024, 768],
+    "camera_warmup_time": 10,
+    "camera_rotation": 180,
+    "camera_zoom": [0.25, 0.25, 0.5, 0.5],
+    "path": "/home/pi/stein/projects/python/camera/timelapse/",
+    "file_root": "pic",
+    "lapse": 3600
+}
