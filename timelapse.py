@@ -93,7 +93,7 @@ class Sensor():
         """
         # Get CPU temperature
         self.__tx = os.popen('/opt/vc/bin/vcgencmd measure_temp')
-        self._cputemp = self.__tx.read()
+        self.__cputemp = self.__tx.read()
         self.__cputemp = self.__cputemp.replace('temp=','')
         self.__cputemp = self.__cputemp.replace('\'C\n','')
         self.__cputemp = float(self.__cputemp)
