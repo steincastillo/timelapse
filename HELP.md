@@ -6,7 +6,7 @@ timelapse utility for raspberry pi camera
 
 # DESCRIPTION
 
-Created on Sun Nov 5 10:22:44 2017
+Created on Sun Nov 5 10:22:44 2017 
 @author: Stein Castillo
 *****************************************
            Lapse Image Camera          
@@ -14,8 +14,8 @@ Created on Sun Nov 5 10:22:44 2017
 *****************************************
     
 **Requirements:** 
-* image magick installed and working 
-* https://www.theurbanpenguin.com/image-manipulation-on-the-raspberry-pi-using-imagemagick/ 
+* image magick_ installed and working 
+.. _https://www.theurbanpenguin.com/image-manipulation-on-the-raspberry-pi-using-imagemagick/ 
     
 **Usage:** 
 * python timelapse.py -c <conf.json> 
