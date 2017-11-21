@@ -14,9 +14,8 @@ Created on Sun Nov 5 10:22:44 2017
 *****************************************
     
 **Requirements:** 
-* image magick_ installed and working 
-.. _magick: https://www.theurbanpenguin.com/image-manipulation-on-the-raspberry-pi-using-imagemagick/ 
-    
+* [image magick](https://www.theurbanpenguin.com/image-manipulation-on-the-raspberry-pi-using-imagemagick/) installed and working 
+
 **Usage:** 
 * python timelapse.py -c <conf.json> 
 * python timelapse.py --conf <conf.json> 
