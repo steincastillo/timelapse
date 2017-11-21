@@ -1,8 +1,11 @@
-# TIMELAPSE
+
+TIMELAPSE
+===
 timelapse utility for raspberry pi camera
+---
 
 # DESCRIPTION
-*****************************************
+
 Created on Sun Nov 5 10:22:44 2017
 @author: Stein Castillo
 *****************************************
@@ -10,11 +13,11 @@ Created on Sun Nov 5 10:22:44 2017
                  V1.0                  
 *****************************************
     
-Requirements:
-    image magick installed and working
-    https://www.theurbanpenguin.com/image-manipulation-on-the-raspberry-pi-using-imagemagick/
+**Requirements:** 
+* image magick installed and working 
+* https://www.theurbanpenguin.com/image-manipulation-on-the-raspberry-pi-using-imagemagick/ 
     
-Usage: 
+**Usage:** 
 * python timelapse.py -c <conf.json> 
 * python timelapse.py --conf <conf.json> 
 
