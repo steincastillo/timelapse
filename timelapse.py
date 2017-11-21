@@ -11,7 +11,15 @@ Edited on
 *                 V1.0                  *
 *****************************************
 
+Description:
+    Takes pictures at set intervals. Uses the SenseHat sensor to overlay
+    enviroment information (pressure, temperature and humidity) and
+    the SenseHat display as a flash for low light conditions.
+    
 Requirements:
+    Raspberrry Pi 
+    Raspberry pi Camera
+    SenseHat (optional)
     image magick installed and working
     https://www.theurbanpenguin.com/image-manipulation-on-the-raspberry-pi-using-imagemagick/
     
@@ -23,11 +31,11 @@ Usage:
 
 # Import libraries
 
+import os
 import argparse
 import json
-import PIL
 import pprint
-import os
+import PIL
 import colorama
 from picamera import PiCamera
 from datetime import datetime
@@ -36,8 +44,7 @@ from time import sleep
 # Define classes
 
 class Sensor():
-    """Reads the SenseHat sensors and stores the values 
-    in class attributes
+    """Operates the Sensehat.
         
         Attributes:
         -----------
@@ -46,11 +53,19 @@ class Sensor():
         humidity: float
     """
     def __init__(self, hat=False):
+        """ Initializes the Sensor class.
+        
+        Parameters:
+        -----------
+        hat : Bool
+            True: Use the Sensehat installed on the RPi
+            False: Use the emulator
+        """
         self.__hat = hat
         self.temperature = 0
         self.pressure = 0
         self.humidity = 0
-        # Determine if SenseHat or simulation will be used
+        # Determine if SenseHat or emulator will be used
         if self.__hat:
             from sense_hat import SenseHat
         else:
@@ -121,7 +136,6 @@ class Sensor():
         --------
         None
             Uses the Sensehat display as a flash to take pictures
-            in low light conditions.
             'w': White light (default)
             'r': Red light
         """
@@ -138,7 +152,8 @@ class Sensor():
 # Define functions
    
 def msg_out(typ = "I", msg = "null"):
-    """prints a formated message to the console
+    """prints a formated message to the console.
+    
     depending on the type of message a color will be assigned
     when presenting the message
     

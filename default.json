@@ -6,5 +6,5 @@
     "camera_zoom": [0.25, 0.25, 0.5, 0.5],
     "path": "/home/pi/stein/projects/python/camera/images/experiment_206/",
     "file_root": "pic",
-    "lapse": 60
+    "lapse": 3600
 }
