@@ -4,12 +4,10 @@ timelapse utility for raspberry pi camera
 # DESCRIPTION
 *****************************************
 Created on Sun Nov 5 10:22:44 2017
-Edited on 
 @author: Stein Castillo
-
 *****************************************
-*           Lapse Image Camera          *
-*                 V1.0                  *
+           Lapse Image Camera          
+                 V1.0                  
 *****************************************
     
 Requirements:
@@ -17,48 +15,47 @@ Requirements:
     https://www.theurbanpenguin.com/image-manipulation-on-the-raspberry-pi-using-imagemagick/
     
 Usage: 
-    python timelapse.py -c <conf.json>
-    python timelapse.py --conf <conf.json> 
-*****************************************
+* python timelapse.py -c <conf.json> 
+* python timelapse.py --conf <conf.json> 
 
 # CLASSES
 Sensor
 
 class Sensor
- |  Reads the SenseHat sensors and stores the values 
- |  in class attributes
- |      
- |      Attributes:
- |      -----------
- |      temperature: float 
- |      pressure: float
- |      humidity: float
- |  
- |  Methods defined here:
- |  
- |  __init__(self, hat=False)
- |  
- |  flashOff(self)
- |      Turn the Sense Hat display OFF
- |  
- |  flashOn(self, color='w')
- |      Turn the Sense Hat display ON
- |      
- |      Parameters:
- |      -----------
- |      color: {"w", "r"}
- |      
- |      Returns:
- |      --------
- |      None
- |          Uses the Sensehat display as a flash to take pictures
- |          in low light conditions.
- |          'w': White light (default)
- |          'r': Red light
- |  
- |  update(self)
- |      Read the SenseHat sensors
-     |      Temperature reading is corrected for CPU heat effect
+   Reads the SenseHat sensors and stores the values 
+   in class attributes
+       
+   Attributes:
+   -----------
+   temperature: float 
+   pressure: float
+   humidity: float
+   
+   Methods defined here:
+   
+   __init__(self, hat=False)
+   
+   flashOff(self)
+   Turn the Sense Hat display OFF
+   
+   flashOn(self, color='w')
+   Turn the Sense Hat display ON
+   
+   Parameters:
+   -----------
+   color: {"w", "r"}
+   
+   Returns:
+   --------
+   None
+   Uses the Sensehat display as a flash to take pictures
+   in low light conditions.
+   'w': White light (default)
+   'r': Red light
+   
+   update(self)
+   Read the SenseHat sensors
+   Temperature reading is corrected for CPU heat effect
 
 # FUNCTIONS
 msg_out(typ='I', msg='null')
@@ -74,11 +71,11 @@ msg : str
     Message contents
 Returns
 -------
-    Formatted message to the console
-    'I': Info - Green
-    'W': Warning - Yellow
-    'A': Alarm - Red
-    'E': Error - Red
-    'C': Command - Yellow
-    'N': Note - Cyan
+Formatted message to the console
+* 'I': Info - Green 
+* 'W': Warning - Yellow 
+* 'A': Alarm - Red 
+* 'E': Error - Red 
+* 'C': Command - Yellow 
+* 'N': Note - Cyan 
     
