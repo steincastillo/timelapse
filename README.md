@@ -1,5 +1,4 @@
-. # Timelapse
-Timelapse
+#Timelapse
 
 ##What does it do? 
 Configurable routine that takes pictures at fixed time intervals using the Raspberry Pi (RPi) camera module. 
