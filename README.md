@@ -19,13 +19,13 @@ provided, default parameters will be used.
 
 ## JSON file parameters 
 a JSON file can be provided when executing the routine to control the overall behavior. The accepted parameters are:
-* camera rotation: 0 
-* camera resolution: [960, 720] 
-* camera_zoom": [0.0, 0.0, 1.0, 1.0] 
-* camera_warmup_time": 2 
+* camera rotation: int. Set the camera rotation in degrees (0, 90, 180, 2702)
+* camera resolution: tuple. Sets the image resolution  
+* camera_zoom": Set the camera resolution. [0.0, 0.0, 1.0, 1.0] 
+* camera_warmup_time": int. Sets the interval in secods to prepapre the camera 
 * path: cwd 
-* file_root": "pic" 
-* lapse: 10 
+* file_root": Set ths root name of the picture file
+* lapse int. Set the interval in secods to between pictures 
 
 The <default.json> file provided with this library can be edited to accomodate different requirements.
 
