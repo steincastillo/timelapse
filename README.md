@@ -14,18 +14,18 @@ provided, default parameters will be used.
 * Image Magick (**Required**) 
 
 ## How to execute it? 
-`python3 timelapse.py --conf <conf.JSON>`
+`python3 timelapse.py --conf <conf.JSON>` 
 `python3 timelapse.py -c <conf.JSON>`
 
 ## JSON file parameters 
-a JSOn file can be provided when executing the routine to control the overall behavior. The accepted parameters are:
-* warmup_camera_time: 
-* camera_resolution 
-* timelapse: 
-* sensehat: Bool -> True if sensehat is installed. False otherwise 
-* xxx 
-* xxx 
-* xxx 
+a JSON file can be provided when executing the routine to control the overall behavior. The accepted parameters are:
+* camera rotation: 0 
+* camera resolution: [960, 720] 
+* camera_zoom": [0.0, 0.0, 1.0, 1.0] 
+* camera_warmup_time": 2 
+* path: cwd 
+* file_root": "pic" 
+* lapse: 10 
 
 The <default.json> file provided with this library can be edited to accomodate different requirements.
 
@@ -42,7 +42,7 @@ If no JSON file is provided when executing the routine, the following parameters
 
 ## What else do I need to know? 
 * As the routine runs, it will display messages on the console to inform of the progress/status of the execution. 
-* The routine will run on an infinite loop. to Stop execution pres ctrl+c 
+* The routine will run on an infinite loop. to stop execution pres ctrl+c 
 * The images capture are saved on JPEG format 
 
 ## Legal stuff
