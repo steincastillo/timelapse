@@ -14,18 +14,18 @@ provided, default parameters will be used.
 * Image Magick (**Required**) 
 
 ## How to execute it? 
-`python3 timelapse.py --conf <conf.JSON>` 
-`python3 timelapse.py -c <conf.JSON>`
+* `python3 timelapse.py --conf <conf.JSON>` 
+* `python3 timelapse.py -c <conf.JSON>`
 
 ## JSON file parameters 
 a JSON file can be provided when executing the routine to control the overall behavior. The accepted parameters are:
-* camera rotation: int. Set the camera rotation in degrees (0, 90, 180, 2702)
+* camera rotation: int. Sets the camera rotation in degrees (0, 90, 180, 2702)
 * camera resolution: tuple. Sets the image resolution  
-* camera_zoom": Set the camera resolution. [0.0, 0.0, 1.0, 1.0] 
+* camera_zoom": Sets the camera resolution. [0.0, 0.0, 1.0, 1.0] 
 * camera_warmup_time": int. Sets the interval in secods to prepapre the camera 
 * path: cwd 
-* file_root": Set ths root name of the picture file
-* lapse int. Set the interval in secods to between pictures 
+* file_root": Sets ths root name of the picture file
+* lapse int. Sets the interval in secods to between pictures 
 
 The <default.json> file provided with this library can be edited to accomodate different requirements.
 
@@ -47,5 +47,5 @@ If no JSON file is provided when executing the routine, the following parameters
 
 ## Legal stuff
 Author: Stein Castillo (stein@americamail.com) 
-Version: 1.5.0 
-License: Check license.txt for details 
+* Version: 1.5.0 
+* License: Check license.txt for details 
