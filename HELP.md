@@ -1,17 +1,16 @@
 
 TIMELAPSE
 ===
-timelapse utility for raspberry pi camera
+Timelapse Utility for Raspberry Pi Camera
 ---
 
 # DESCRIPTION
 
 Created on Sun Nov 5 10:22:44 2017 
 @author: Stein Castillo
-*****************************************
            Lapse Image Camera          
                  V1.0                  
-*****************************************
+
     
 **Requirements:** 
 * [image magick](https://www.theurbanpenguin.com/image-manipulation-on-the-raspberry-pi-using-imagemagick/) installed and working 
